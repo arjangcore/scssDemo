@@ -1,0 +1,25 @@
+/*** css variable:
+:root{
+    --primary-color: #227722;
+    --accent-color: #ff652f;
+    --text-color: #fff;
+}
+body{
+    background: var(--primary-color);
+}
+****/
+/** vs scss variable:   **/
+$primary-color: #227722;
+$accent-color: #ff652f;
+$text-color: #fff;
+$font-weights: (
+    "regular": 400,
+    "medium": 500,
+    "bold" : 700
+);
+
+body{
+    background: $primary-color;
+    color: $text-color;
+    font-weight: map-get($font-weights, bold );
+}
